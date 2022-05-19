@@ -9,7 +9,10 @@ module.exports = function(obj, ...props) {
     if (obj[prop] === undefined || obj[prop] === '') {
       errors.push(`No ${prop} specified.`);
     }
+
   });
+
+  
 
   if (errors.length) {
     return {
